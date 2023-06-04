@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeBank - Operação</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+          <img class="logo" src="img/Logo.png" alt="Logo da empresa">
+      </a> 
+      <div>
+        <a href="index.html" class="btn">Início</a>
+        <a href="login.html" class="btn">Já sou cliente</a>
+        <a href="formulario.html" class="btn">Abra sua conta</a>
+      </div>
+      </header>
+
+      <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Operações</h2>
+                    <p>Selecione a operação desejada:</p>
+                    <a href="#" class="btn operacao-depositar">Depositar</a>
+                    <a href="#" class="btn operacao-sacar">Resgatar</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="operacao-formulario">
+                        <input type="number" id="valor" placeholder="Digite o valor">
+                        <button class="btn btn-primary enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="main">
+        <div class="container">
+            <h2>Movimentações Financeiras</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card saldo-inicial">
+                        <div class="card-body">
+                            <h5 class="card-title">Saldo Inicial</h5>
+                            <p class="card-text">R$ 1000,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card entrada">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrada</h5>
+                            <p class="card-text">R$ 500,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card saida">
+                        <div class="card-body">
+                            <h5 class="card-title">Saída</h5>
+                            <p class="card-text">R$ 200,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card saldo-atual">
+                        <div class="card-body">
+                            <h5 class="card-title">Saldo Atual</h5>
+                            <p class="card-text">R$ 1300,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- Incluindo os scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.operacao-depositar').click(function () {
+                // Abrir a janela de depósito
+                $('.operacao-formulario').toggleClass('aberto');
+                $('#valor').attr('placeholder', 'Digite o valor a depositar');
+                $('html, body').animate({
+                    scrollTop: $(".operacao-formulario").offset().top
+                }, 500);
+            });
+
+            $('.operacao-sacar').click(function () {
+                // Abrir a janela de saque
+                $('.operacao-formulario').toggleClass('aberto');
+                $('#valor').attr('placeholder', 'Digite o valor a resgatar');
+                $('html, body').animate({
+                    scrollTop: $(".operacao-formulario").offset().top
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>

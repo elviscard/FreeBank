@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+X6QLDv6g2s4FEtvcSvnapwEjwE6wo" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="css/styleLogin.css">-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body> 
+  <header>
+    <a href="index.html">
+      <img class="logo" src="img/Logo.png" alt="Logo da empresa">
+  </a> 
+  <div>
+    <a href="index.html" class="btn">Início</a>
+    <a href="login.html" class="btn">Já sou cliente</a>
+    <a href="formulario.html" class="btn">Abra sua conta</a>
+  </div>
+
+  </header>
+
+  <section class="main">
+    <div class="container">
+      <h2>FreeBank - Abra sua conta</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="sobrenome">Sobrenome:</label>
+              <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="form-group">
+              <label for="cpf">CPF:</label>
+              <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço:</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado:</label>
+              <input type="text" class="form-control" id="estado" placeholder="Digite seu estado">
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade:</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
+            </div>
+            <div class="form-group">
+              <label for="cep">CEP:</label>
+              <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="celular">Celular:</label>
+              <input type="text" class="form-control" id="celular" placeholder="Digite seu celular com código de área">
+            </div>
+            <div class="form-group">
+              <label for="telefone-residencial">Telefone residencial:</label>
+              <input type="text" class="form-control" id="telefone-residencial" placeholder="Digite seu telefone residencial com código de área">
+            </div>
+            <div class="form-group">
+              <label for="telefone-comercial">Telefone comercial:</label>
+              <input type="text" class="form-control" id="telefone-comercial" placeholder="Digite seu telefone comercial com código de área">
+            </div>
+            <div class="form-group">
+              <label for="genero">Gênero:</label>
+              <select class="form-control" id="genero">
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Abrir conta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1PiYrQVJ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+</body>
+</html>

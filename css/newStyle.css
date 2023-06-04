@@ -1,0 +1,140 @@
+/* Estilos gerais */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2366B5;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: #F5A623;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: #FFF;
+    color: #F5A623;
+    border: 1px solid #F5A623;
+}
+
+/* Estilos para o formulário de login */
+.main {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-bottom: 20px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .links a {
+        margin-bottom: 10px;
+    }
+}
+
+/*reponsivo para o cabeçalho*/
+
+/* Estilos gerais para todos os dispositivos */
+
+/* Estilos específicos para telas de até 768px (tablets) */
+@media screen and (max-width: 768px) {
+    /* Adicione aqui as regras de estilo para tablets */
+    .operacao-formulario.aberto {
+      height: 150px;
+    }
+  }
+  
+  /* Estilos específicos para telas de até 576px (celulares) */
+  @media screen and (max-width: 576px) {
+    /* Adicione aqui as regras de estilo para celulares */
+    .operacao-formulario.aberto {
+      height: 100px;
+    }
+  }
+  
+
